@@ -1,3 +1,6 @@
+*{
+    cursor: url(assets/images/varitamagica.svg), auto !important;
+}
 body {
     background-color: black !important;
 }
