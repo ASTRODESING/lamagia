@@ -1,0 +1,89 @@
+.tarjeta_texto {
+    padding: 1  0px;
+    border-radius: 25px;
+    background: rgb(20, 20, 20);
+    background: linear-gradient(57deg, rgba(20, 20, 20, 0.61) 0%, rgba(96, 1, 1, 0.61) 100%);
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+.menu-scroll{
+    background: rgba(0, 0, 0, .45) !important;
+}
+
+.tarjeta_texto div img {
+    width: 800px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.meat{
+    transform: scaleX(-1);
+    position: absolute;
+    width: 500px;
+    top: -100px;
+    left: -300px;
+}
+.romero{
+    opacity: 0.7;
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    right: -20px;
+}
+.romero1{
+    position: absolute;
+    width: 62px;
+    top: 157px;
+    right: -5%;
+    rotate: 66deg;
+}
+.romero2{
+    position: absolute;
+    width: 76px;
+    top: 53%;
+    right: -70px;
+}
+.romero3{
+    position: absolute;
+    width: 91px;
+    top: 97%;
+    left: 4px;
+    rotate: 180deg;
+}
+.abouts{
+    overflow: visible;
+}
+
+@media screen and (max-width: 800px) {
+    .tarjeta_texto {
+        display: flex;
+        flex-direction: column  ;
+    }
+    .tarjeta_texto div img {
+        width: 450px;
+        padding: 10px;
+        border-radius: 20px;
+    
+    }
+    .btn-primary{
+        margin: 20px;
+  }
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    top: -52px;
+    left: 0;
+}
+.wave2{
+    position: absolute;
+    width: 150%;
+    top: 500px;
+    left: 0;
+}

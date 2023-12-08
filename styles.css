@@ -1,0 +1,275 @@
+body {
+    background-color: black !important;
+}
+
+.logo_presentacion {
+    border-radius: 100%;
+    width: 30%;
+    -webkit-box-shadow: 10px 10px 104px -13px rgb(104, 104, 104);
+    -moz-box-shadow: 10px 10px 104px -13px rgb(104, 104, 104);
+    box-shadow: 10px 10px 104px -13px rgb(104, 104, 104);
+
+}
+
+.main_menu_bg {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.Slogan {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sobre_nosotros1 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: red !important;
+    word-wrap: break-word !important;
+    margin: 3px !important;
+}
+
+
+
+.scrollup {
+    opacity: 1 !important;
+}
+
+.scrollup i {
+    color: red !important;
+}
+
+.sobre_nosotros2 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white !important;
+    word-wrap: break-word !important;
+    margin: 3px !important;
+}
+
+.single_abouts_text {
+    padding: 20px;
+    background: rgb(20, 20, 20);
+    background: linear-gradient(57deg, rgba(20, 20, 20, 0.61) 0%, rgba(96, 1, 1, 0.61) 100%);
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 104px -13px rgb(36, 36, 36);
+    -moz-box-shadow: 10px 10px 104px -13px rgb(36, 36, 36);
+    box-shadow: 10px 10px 104px -13px rgb(36, 36, 36);
+}
+
+.booking {
+    color: red !important;
+}
+
+.single_portfolio_text {
+    border-radius: 30px !important;
+    -webkit-box-shadow: 10px 10px 104px -13px rgb(65, 65, 65);
+    -moz-box-shadow: 10px 10px 104px -13px rgb(65, 65, 65);
+    box-shadow: 10px 10px 104px -13px rgb(65, 65, 65);
+}
+
+
+.single_features_text {
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 88px -57px rgba(201, 0, 201, 1);
+    -moz-box-shadow: 10px 10px 88px -57px rgba(201, 0, 201, 1);
+    box-shadow: 10px 10px 88px -57px rgba(201, 0, 201, 1);
+}
+
+.cont {
+    display: inline;
+}
+
+.bubbles {
+    background-color: black;
+}
+
+.bubbles span {
+    position: relative;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    background: #efb810;
+    margin: 4px 4px;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    animation-delay: calc(190s / var(--i));
+    z-index: 1;
+}
+.bubbles2 span{
+    animation: animate2 5s linear infinite !important;
+    animation-delay: calc(190s / var(--i)) !important;
+}
+
+.grow span {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 3px #f5cb4d9a,
+        0 0 50px #ffcd38,
+        0 0 100px #ffe081;
+}
+
+/*.bubbles span:nth-child(1){
+
+
+}*/
+.bubbles span:nth-child(2) {
+    left: 10%;
+}
+
+.bubbles span:nth-child(3) {
+    left: 20%;
+}
+
+.bubbles span:nth-child(4) {
+    left: 30%;
+}
+
+.bubbles span:nth-child(5) {
+    left: 40%;
+}
+
+.bubbles span:nth-child(6) {
+    left: 50%;
+}
+
+.bubbles span:nth-child(7) {
+    left: 60%;
+}
+
+.bubbles span:nth-child(8) {
+    left: 70%;
+}
+
+.bubbles span:nth-child(9) {
+    left: 80%;
+}
+
+.bubbles span:nth-child(10) {
+    left: 90%;
+}
+
+.footer {
+    padding: 200px;
+    width: 100%;
+    background-color: black !important;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scale(0);
+    }
+
+    100% {
+        transform: translateY(-800vh) scale(1);
+    }
+}
+@keyframes animate2 {
+    0% {
+        transform: translateY(0) scale(0);
+    }
+
+    100% {
+        transform: translateY(-400vh) scale(0.5);
+    }
+}
+
+.portfolio_images_overlay {
+    border-radius: 20px;
+}
+
+.portfolio_content {
+    padding-top: 56px;
+}
+
+/* EFECTO NEON */
+.text-effect {
+    overflow: hidden;
+    position: relative;
+    filter: contrast(110%) brightness(190%);
+}
+
+.neon {
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: transparent;
+}
+
+.neon::before,
+.neon::after {
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    filter: blur(1px);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.neon::after {
+    mix-blend-mode: difference;
+}
+
+.gradient,
+.spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.gradient {
+    background: linear-gradient(45deg, red, rgb(255, 255, 255));
+    mix-blend-mode: multiply;
+}
+
+.spotlight {
+    -webkit-animation: light 5s infinite linear;
+    animation: light 5s infinite linear;
+    background: radial-gradient(circle, white, transparent 25%) 0 0/25% 25%, radial-gradient(circle, white, black 25%) 50% 50%/12.5% 12.5%;
+    top: -100%;
+    left: -100%;
+    mix-blend-mode: color-dodge;
+}
+
+@-webkit-keyframes light {
+    100% {
+        transform: translate3d(50%, 50%, 0);
+    }
+}
+
+@keyframes light {
+    100% {
+        transform: translate3d(50%, 50%, 0);
+    }
+}
+
+.neon {
+    font: 70px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.neon:focus {
+    outline: none;
+    border: 6px dotted white;
+}
+
+@media only screen and (max-width: 920px) {
+    .neon{
+        font-size: 50px;
+    }
+  }
+  @media only screen and (max-width: 765px) {
+    .neon{
+        font-size: 25px;
+    }
+  }
